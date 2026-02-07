@@ -4,6 +4,68 @@
 {% endblock %}
 
 {% block body %}
-	<p>hello world</p>
-	<h1>Titre</h1>
-{% endblock %}
+
+	<section id="bg-hero-accueil" class="bg-hero-accueil d-flex flex-column align-items-center justify-content-center">
+		<p class="text-white">Le chef Arnaud Michant vous invite au</p>
+		<h1 id="hero-heading" class="text-white">Quai Antique</h1>
+		<button class="btn btn-primary">Réserver</button>
+
+	</section>
+
+	<section>
+		<article>
+			<div class="container p-4">
+				<h2 class="text-center">Bienvenue au Quai Antique</h2>
+				<div class="row row-cols-2 align-items-center">
+					<div class="col">
+						<p>Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaud Michant vous invite à découvrir un voyage culinaire mémorable.
+						</p>
+					</div>
+					<div class="col">
+						<img class="w-100 rounded" src="{{ asset('/photos/chef.jpg') }}" alt="Photo du chef Michant" class="img-fluid d-block mx-auto" loading="lazy">
+					</div>
+				</div>
+				<div class="text-center pt-4">
+					<a href="#" class="btn btn-primary">Nos menus</a>
+				</div>
+			</div>
+		</article>
+
+		<article class="bg-dark-custom text-white">
+
+			<div class="container p-4">
+				<h2 class="text-center">Des produits frais</h2>
+				<div class="row row-cols-2 align-items-center">
+					<div class="col">
+						<img class="w-100 rounded" src="{{ asset('/photos/produits.jpg') }}" alt="Plats sur une table" class="img-fluid d-block mx-auto" loading="lazy">
+					</div>
+					<div class="col">
+						<p>Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaud Michant vous invite à découvrir un voyage culinaire mémorable.
+						</p>
+					</div>
+				</div>
+				<div class="text-center pt-4">
+					<a href="#" class="btn btn-primary">Voir la galerie</a>
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="container p-4">
+				<h2 class="text-center">Réservation en ligne</h2>
+				<div class="row row-cols-2 align-items-center">
+					<div class="col">
+						<p>Vous pouvez directement réserver votre table sur ce site ! Il suffit de cliquer sur le bouton ci-dessous.</p>
+					</p>
+				</div>
+				<div class="col">
+					<img class="w-100 rounded" src="{{ asset('/photos/friends.jpg') }}" alt="Un groupe d'amis mangeant au restaurant" class="img-fluid d-block mx-auto" loading="lazy">
+				</div>
+			</div>
+			<div class="text-center pt-4">
+				<a href="#" class="btn btn-primary">Réserver</a>
+			</div>
+		</div>
+	</article>
+
+</section>{% endblock %}
